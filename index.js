@@ -34,7 +34,7 @@ app.listen(port, async () => {
 
 const bot = new Telegraf(BOT_TOKEN);
 
-const web_link = "https://vanilllaswap.netlify.app/";
+const web_link = "https://vswaptesting.netlify.app/";
 
 // Define the URL of the image you want to send
 const imageUrl = "https://postimg.cc/dDVZzf99"; // 📌 **Replace this with your actual image URL**
@@ -47,7 +47,7 @@ bot.start((ctx) => {
 
     // Send the image with caption and inline keyboard
     ctx.replyWithPhoto(imageUrl, {
-        caption: `*Hey, ${userName}! Welcome to Demo Tap App!*\n\nClick on Play Now to start mining Ton Coin`,
+        caption: `*Hey, ${userName}! Welcome to Vanilla Swap!*\n\nClick on Play Now to start mining $VSWAP`,
         parse_mode: "Markdown",
         reply_markup: {
             inline_keyboard: [
